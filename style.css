@@ -474,5 +474,116 @@ button:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 20px rgba(0,217,255,0.3);
 }
-@media screen and (max-width:768px)
+
+/* ===== Responsive Design ===== */
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img, video, iframe {
+    max-width: 100%;
+}
+
+/* Large Screens */
+@media (max-width: 1200px) {
+
+    .container {
+        width: 95%;
+    }
+
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .gallery,
+    .cards,
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .gallery,
+    .cards,
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    input,
+    textarea,
+    select,
+    button {
+        max-width: 100%;
+    }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+
 
