@@ -528,7 +528,7 @@ img, video, iframe {
     }
 
     .container {
-        width: 95%;
+        width: 80%;
         padding: 10px;
     }
 
@@ -551,7 +551,7 @@ img, video, iframe {
     }
 
     img {
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
     }
 
@@ -559,7 +559,7 @@ img, video, iframe {
     textarea,
     select,
     button {
-        max-width: 100%;
+        max-width: 80%;
     }
 
 }
